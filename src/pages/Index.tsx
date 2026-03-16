@@ -74,14 +74,19 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Обо мне</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Обо мне</h2>
+            <img
+              src="https://cdn.poehali.dev/projects/4aead618-0d59-45c8-8e7a-ab51d6e5e1f5/bucket/260af31b-e616-4582-857b-4e6ced73bed0.jpg"
+              alt="Фото методолога"
+              className="rounded-full shadow-xl w-36 h-36 object-cover object-top mx-auto mb-6"
+            />
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Методолог онлайн-образования, педагогический дизайнер, эксперт по ИИ-инструментам
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Системный подход к обучению</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
@@ -133,12 +138,29 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <img
-                src="https://cdn.poehali.dev/projects/4aead618-0d59-45c8-8e7a-ab51d6e5e1f5/bucket/260af31b-e616-4582-857b-4e6ced73bed0.jpg"
-                alt="Фото методолога"
-                className="rounded-2xl shadow-xl w-full max-w-[360px] h-auto object-cover"
-              />
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+              <h4 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
+                <Icon name="Award" className="h-5 w-5 text-yellow-500" />
+                Достижения
+              </h4>
+              <ul className="space-y-3 text-sm text-slate-600">
+                <li className="flex items-start gap-2">
+                  <Icon name="Medal" className="h-4 w-4 text-yellow-500 mt-0.5 shrink-0" />
+                  Медаль «90 лет ДОСААФ» (2017) за вклад в воспитание молодёжи
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="BookOpen" className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
+                  10 лет в методологии: от офлайн-программ до EdTech-продуктов
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="Bot" className="h-4 w-4 text-purple-500 mt-0.5 shrink-0" />
+                  Реализованные ИИ-ассистенты для образовательных проектов
+                </li>
+                <li className="flex items-start gap-2">
+                  <Icon name="Users" className="h-4 w-4 text-teal-500 mt-0.5 shrink-0" />
+                  Работала с аудиторией от школьников до корпоративных команд
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -413,71 +435,97 @@ export default function Portfolio() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-              <div className="relative h-48 bg-gradient-to-r from-blue-500 to-purple-600">
+              <div className="relative h-52 bg-gradient-to-r from-blue-500 to-purple-600 overflow-hidden">
                 <img
-                  src="/modern-web-dashboard.png"
-                  alt="Онлайн-курс под ключ"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  src="https://ml-portfolio.tilda.ws/img/tild3462-6663-4138-a261-353763633462/-/cover/1560x840/nopadding/0_-13B10A5B_-_13B10A5B_20240831_182459.jpg"
+                  alt="Школа зоопсихологии — сайт и курсы"
+                  className="absolute inset-0 w-full h-full object-cover opacity-80"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
+                <div className="absolute bottom-3 left-4">
+                  <span className="text-white text-xs font-medium bg-blue-600/80 px-2 py-1 rounded">
+                    ml-portfolio.tilda.ws
+                  </span>
+                </div>
               </div>
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
                     <CardTitle>Онлайн-курс «под ключ»</CardTitle>
                     <CardDescription>
-                      Полный цикл создания образовательного продукта: от распаковки идеи до запуска линейки курсов и ИИ-ассистента Службы заботы.
+                      Школа зоопсихологии: сайт, вебинары и курсы под ключ. CustDev, ToV, брендбук, флагманский продукт, вспомогательный контент и ИИ-ассистент.
                     </CardDescription>
                   </div>
-                  <Button variant="ghost" size="icon">
-                    <Icon name="ExternalLink" className="h-4 w-4" />
-                  </Button>
+                  <a href="https://ml-portfolio.tilda.ws/" target="_blank" rel="noopener noreferrer">
+                    <Button variant="ghost" size="icon">
+                      <Icon name="ExternalLink" className="h-4 w-4" />
+                    </Button>
+                  </a>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="outline">Figma</Badge>
+                  <Badge variant="outline">Supa</Badge>
                   <Badge variant="outline">Articulate</Badge>
                   <Badge variant="outline">GetCourse</Badge>
-                  <Badge variant="outline">LLM API</Badge>
+                  <Badge variant="outline">Suvvy</Badge>
+                  <Badge variant="outline">TG-bot</Badge>
+                  <Badge variant="outline">VK-bot</Badge>
+                  <Badge variant="outline">Senler</Badge>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-600">
                   <Icon name="Star" className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span>Полная линейка продуктов + ИИ-ассистент</span>
+                  <span>Разработка, создание и администрирование</span>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
-              <div className="relative h-48 bg-gradient-to-r from-purple-500 to-pink-600">
-                <img
-                  src="/ecommerce-mobile-app.png"
-                  alt="ИИ-автоматизация"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+              <div className="relative h-52 bg-gradient-to-r from-purple-500 to-pink-600 overflow-hidden flex items-center justify-center">
+                <div className="text-center text-white px-6">
+                  <Icon name="Bot" className="h-12 w-12 mx-auto mb-2 opacity-80" />
+                  <p className="text-sm opacity-80">Ветеринарный ИИ-ассистент</p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent" />
               </div>
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle>ИИ-ассистент и автоматизация</CardTitle>
+                    <CardTitle>Ветеринарный ИИ-ассистент</CardTitle>
                     <CardDescription>
-                      Разработка ТГ-бота и ИИ-ассистента для образовательного проекта с интеграцией n8n и RAG-системой.
+                      Мультимодальное приложение для ветклиник: голос, фото, PDF и текст в единый контекст → структурированная сводка для карты пациента и 1С.
                     </CardDescription>
                   </div>
-                  <Button variant="ghost" size="icon">
-                    <Icon name="ExternalLink" className="h-4 w-4" />
-                  </Button>
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="space-y-3 mb-4 text-sm text-slate-600">
+                  <div className="flex items-start gap-2">
+                    <Icon name="Terminal" className="h-4 w-4 text-purple-500 mt-0.5 shrink-0" />
+                    <span>3 интерфейса: CLI, Telegram-бот, веб-форма (Flask)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Mic" className="h-4 w-4 text-purple-500 mt-0.5 shrink-0" />
+                    <span>Whisper (речь), GPT-4 Vision (фото/PDF), GigaChat (итоговая сводка)</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Flag" className="h-4 w-4 text-purple-500 mt-0.5 shrink-0" />
+                    <span>Российский стек: GigaChat + ProxyAPI</span>
+                  </div>
+                </div>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline">n8n</Badge>
-                  <Badge variant="outline">RAG</Badge>
-                  <Badge variant="outline">Suvvy</Badge>
-                  <Badge variant="outline">Salebot</Badge>
+                  <Badge variant="outline">Python</Badge>
+                  <Badge variant="outline">GigaChat</Badge>
+                  <Badge variant="outline">Whisper</Badge>
+                  <Badge variant="outline">GPT-4 Vision</Badge>
+                  <Badge variant="outline">aiogram</Badge>
+                  <Badge variant="outline">Flask</Badge>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-600">
                   <Icon name="Star" className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span>Автоматизация бизнес-процессов обучения</span>
+                  <span>Проектирование, интеграция API, промпт-инжиниринг</span>
                 </div>
               </CardContent>
             </Card>
