@@ -12,18 +12,11 @@ export default function Portfolio() {
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-slate-900">EduMethod</div>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Обо мне
-              </a>
-              <a href="#services" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Услуги
-              </a>
-              <a href="#projects" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Проекты
-              </a>
-              <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Контакты
-              </a>
+              <a href="#about" className="text-slate-600 hover:text-slate-900 transition-colors">Обо мне</a>
+              <a href="#services" className="text-slate-600 hover:text-slate-900 transition-colors">Услуги</a>
+              <a href="#kwork" className="text-slate-600 hover:text-slate-900 transition-colors">Кворк</a>
+              <a href="#projects" className="text-slate-600 hover:text-slate-900 transition-colors">Проекты</a>
+              <a href="#contact" className="text-slate-600 hover:text-slate-900 transition-colors">Контакты</a>
             </div>
           </div>
         </div>
@@ -102,6 +95,7 @@ export default function Portfolio() {
                   <h4 className="font-semibold text-slate-900 mb-2">Дизайн и разработка</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Figma</Badge>
+                    <Badge variant="secondary">Supa</Badge>
                     <Badge variant="secondary">Articulate</Badge>
                     <Badge variant="secondary">Canva</Badge>
                     <Badge variant="secondary">Tilda</Badge>
@@ -112,21 +106,21 @@ export default function Portfolio() {
                   <h4 className="font-semibold text-slate-900 mb-2">ИИ и автоматизация</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">n8n</Badge>
-                    <Badge variant="secondary">LLM API</Badge>
+                    <Badge variant="secondary">LLM/LMM API</Badge>
                     <Badge variant="secondary">RAG</Badge>
                     <Badge variant="secondary">Suvvy</Badge>
+                    <Badge variant="secondary">Salebot</Badge>
                     <Badge variant="secondary">Cursor</Badge>
-                    <Badge variant="secondary">Supa</Badge>
                   </div>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <h4 className="font-semibold text-slate-900 mb-2">Обучение и LMS</h4>
+                  <h4 className="font-semibold text-slate-900 mb-2">Обучение и EdTech / e-learning</h4>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">LMS-платформы</Badge>
-                    <Badge variant="secondary">Salebot</Badge>
-                    <Badge variant="secondary">e-learning</Badge>
+                    <Badge variant="secondary">Skillspace</Badge>
+                    <Badge variant="secondary">iSpring Learn</Badge>
+                    <Badge variant="secondary">GetCourse</Badge>
                   </div>
                 </div>
                 <div>
@@ -139,11 +133,11 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="flex justify-center">
               <img
-                src="/developer-workspace.png"
-                alt="Рабочее место методолога"
-                className="rounded-2xl shadow-lg w-full max-w-[400px] h-auto"
+                src="https://cdn.poehali.dev/projects/4aead618-0d59-45c8-8e7a-ab51d6e5e1f5/bucket/260af31b-e616-4582-857b-4e6ced73bed0.jpg"
+                alt="Фото методолога"
+                className="rounded-2xl shadow-xl w-full max-w-[360px] h-auto object-cover"
               />
             </div>
           </div>
@@ -173,8 +167,8 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-slate-600">
-                  <li>• Разработка учебных траекторий</li>
-                  <li>• Сценарии для e-learning (Articulate, Figma)</li>
+                  <li>• Разработка структуры курса и пути студента</li>
+                  <li>• Сценарии для EdTech / e-learning (Articulate, Figma)</li>
                   <li>• Создание фирменного стиля и голоса проекта</li>
                   <li>• Интеграция с LMS-платформами</li>
                 </ul>
@@ -193,9 +187,9 @@ export default function Portfolio() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-slate-600">
-                  <li>• Создание ИИ-ассистентов и ТГ-ботов</li>
-                  <li>• Автоматизация на n8n и LLM API</li>
-                  <li>• ИИ-генерация контента для сайтов</li>
+                  <li>• Создание ИИ-ассистентов и ТГ-ботов (Suvvy, Salebot)</li>
+                  <li>• Автоматизация на n8n</li>
+                  <li>• LLM/LMM API — российские и зарубежные решения</li>
                   <li>• Промпт-инжиниринг и RAG-системы</li>
                 </ul>
               </CardContent>
@@ -248,14 +242,14 @@ export default function Portfolio() {
                 </div>
                 <CardTitle>Сайты и фирменный стиль</CardTitle>
                 <CardDescription>
-                  Разработка визуального и вербального бренда образовательного проекта.
+                  Разработка визуального и вербального бренда проекта.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-slate-600">
                   <li>• Разработка фирменного стиля</li>
                   <li>• Создание сайтов в конструкторах (Tilda, WP)</li>
-                  <li>• Вайбкодинг и прототипирование в Figma</li>
+                  <li>• Прототипирование в Figma и Supa</li>
                   <li>• Голос и позиционирование проекта</li>
                 </ul>
               </CardContent>
@@ -268,7 +262,7 @@ export default function Portfolio() {
                 </div>
                 <CardTitle>Методология обучения</CardTitle>
                 <CardDescription>
-                  Системный подход к построению образовательных программ для любых форматов.
+                  Гибкий подход к построению образовательных программ для любых форматов.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -284,8 +278,131 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Kwork Section */}
+      <section id="kwork" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-purple-100 text-purple-800 hover:bg-purple-200">Кворк #1</Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              Запуск MVP онлайн-курса за 2 недели
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Фокус на практике и продажах. Под ключ для экспертов.
+            </p>
+          </div>
+
+          {/* For whom */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <Icon name="UserCheck" className="h-7 w-7 text-blue-600" />
+                Для кого эта услуга?
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4 p-4 bg-blue-50 rounded-xl">
+                  <Icon name="Lightbulb" className="h-6 w-6 text-blue-600 mt-0.5 shrink-0" />
+                  <p className="text-slate-700">Эксперты с знаниями и материалами, но без структуры курса</p>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-purple-50 rounded-xl">
+                  <Icon name="Video" className="h-6 w-6 text-purple-600 mt-0.5 shrink-0" />
+                  <p className="text-slate-700">Преподаватели живых вебинаров, которые хотят масштабироваться и автоматизировать процесс</p>
+                </div>
+              </div>
+
+              <div className="mt-8 p-5 bg-slate-50 border border-slate-200 rounded-xl">
+                <p className="text-sm font-semibold text-slate-500 mb-2 uppercase tracking-wide">Что такое MVP?</p>
+                <p className="text-slate-700 text-sm leading-relaxed">
+                  <strong>MVP (Minimum Viable Product)</strong> — минимально жизнеспособный продукт. Запускаем базовую версию курса, чтобы быстро получить обратную связь от первых студентов и проверить гипотезу спроса.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mt-3">
+                  <strong>Преимущество:</strong> Экономия бюджета и времени. Вы не создаёте «идеальный» курс полгода, а запускаете работающий прототип за 2 недели, тестируете и дорабатываете.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mt-3">
+                  <strong>Оценка эффективности:</strong> В курс сразу закладывается стратегия оценки (KPI, тесты, практические задания), чтобы вы видели результат студентов.
+                </p>
+              </div>
+            </div>
+
+            {/* Result */}
+            <div>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <Icon name="CheckCircle" className="h-7 w-7 text-green-600" />
+                Результат
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Готовая программа курса с модулями и уроками",
+                  "Сценарии для видео/вебинаров",
+                  "Комплект учебных материалов (презентации, раздаточные материалы, шаблоны)",
+                  "Банк заданий (кейсы, тесты, практические работы)",
+                  "Система оценки эффективности (критерии, чек-листы проверки)",
+                  "Рекомендации по масштабированию после MVP",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <Icon name="Check" className="h-5 w-5 text-green-500 mt-0.5 shrink-0" />
+                    <span className="text-slate-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Stages */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">Этапы работы</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { num: "01", title: "Анализ и CustDev", icon: "Search" },
+                { num: "02", title: "Проектирование", icon: "Layout" },
+                { num: "03", title: "Разработка материалов", icon: "FileText" },
+                { num: "04", title: "Создание ИИ-ассистента", icon: "Bot" },
+                { num: "05", title: "Сборка и запуск MVP", icon: "Rocket" },
+                { num: "06", title: "Сбор метрик", icon: "BarChart2" },
+              ].map((step) => (
+                <div key={step.num} className="flex items-center gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <div className="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-sm shrink-0">
+                    {step.num}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name={step.icon} className="h-4 w-4 text-slate-500" />
+                    <span className="font-medium text-slate-800">{step.title}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Details card */}
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-bold mb-2">14</div>
+                <div className="text-blue-100">дней на выполнение</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">1</div>
+                <div className="text-blue-100">базовый MVP онлайн-курса</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold mb-2">100%</div>
+                <div className="text-blue-100">доработка до результата</div>
+              </div>
+            </div>
+            <div className="mt-8 border-t border-white/20 pt-6 text-center">
+              <p className="text-blue-100 mb-4 text-sm">
+                Для продуктивного старта: заполните бриф и ознакомьтесь с детализацией услуги перед первым звонком
+              </p>
+              <Button className="bg-white text-blue-700 hover:bg-blue-50">
+                Заказать кворк
+                <Icon name="ArrowRight" className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white">
+      <section id="projects" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Избранные проекты</h2>
@@ -311,18 +428,16 @@ export default function Portfolio() {
                       Полный цикл создания образовательного продукта: от распаковки идеи до запуска линейки курсов и ИИ-ассистента Службы заботы.
                     </CardDescription>
                   </div>
-                  <div className="flex gap-2">
-                    <Button variant="ghost" size="icon">
-                      <Icon name="ExternalLink" className="h-4 w-4" />
-                    </Button>
-                  </div>
+                  <Button variant="ghost" size="icon">
+                    <Icon name="ExternalLink" className="h-4 w-4" />
+                  </Button>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="outline">Figma</Badge>
                   <Badge variant="outline">Articulate</Badge>
-                  <Badge variant="outline">LMS</Badge>
+                  <Badge variant="outline">GetCourse</Badge>
                   <Badge variant="outline">LLM API</Badge>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-slate-600">
@@ -348,11 +463,9 @@ export default function Portfolio() {
                       Разработка ТГ-бота и ИИ-ассистента для образовательного проекта с интеграцией n8n и RAG-системой.
                     </CardDescription>
                   </div>
-                  <div className="flex gap-2">
-                    <Button variant="ghost" size="icon">
-                      <Icon name="ExternalLink" className="h-4 w-4" />
-                    </Button>
-                  </div>
+                  <Button variant="ghost" size="icon">
+                    <Icon name="ExternalLink" className="h-4 w-4" />
+                  </Button>
                 </div>
               </CardHeader>
               <CardContent>
